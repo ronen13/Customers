@@ -4,6 +4,9 @@ services:
     env: node
     buildCommand: npm install && npm run build
     startCommand: npm run start
+    buildFilter:
+      paths:
+        - src/**
     envVars:
       - key: NODE_VERSION
         value: 18
